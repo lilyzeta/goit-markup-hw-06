@@ -708,3 +708,23 @@ img {
     scale: (1);
   }
 }
+
+.modal-title {
+  position: absolute;
+  width: 448px;
+  height: 23px;
+  top: 40px;
+  left: 39px;
+  transform: translate (-50%, -50%);
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--maindark);
+}
+.modal-field {
+  position: absolute;
+  width: 448px;
+  height: 342px;
+}
