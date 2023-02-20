@@ -451,48 +451,56 @@
             </div>
       </footer>
              <div class="is-hidden modal-background" data-modal >
-        <div class="modal">
-          <form>
+        <div class="modal">        
         <button class="modal-button" type="button" data-modal-close >
             <svg class="modal-close-svg" width="11" height="11">
                 <use href="./assets/images/svg-icons.svg#icon-x"></use>
             </svg>
         </button>
+          <form class="modal-form">
+
         <p class="modal-title">Leave your information and we'll call you back</p>
-
-            <label class="modal-field">
-              Name
-              <input class="modal-box" type="text" name="name" />
+            <div class="modal-field">
+            <label class="modal-text-label">
+              Name </br>
+            <div class="input-wrapper">
+              <input class="modal-box" type="text" id="name" name="name" minlength="2" required />
             </label>
-
-            <svg width="12px" height="12px"><use href="./assets/images/svg-icons.svg#icon-person"></use></svg>
-
-            <label class="modal-field">
-            Telephone
-              <input class="modal-box" type="tel" name="telephone" />
+              </div>
+            <svg class=" modal-icon" width="12px" height="12px"><use href="./assets/images/svg-icons.svg#icon-person"></use></svg>
+            </div>
+            <div class="modal-field">
+            <label class="modal-text-label">
+            Telephone </br>
+            <div class="input-wrapper">
+              <input id="tel" class="modal-box" type="tel" name="telephone" minlength="9" required />
             </label>
-
-            <svg width="13px" height="13px"><use href="./assets/images/svg-icons.svg#icon-landline"></use></svg>
-
-            <label class="modal-field">
-              Email
-              <input class="modal-box" type="email" name="email"/>
+            <svg class="modal-icon" width="13px" height="13px"><use href="./assets/images/svg-icons.svg#icon-landline"></use></svg>
+            </div>
+              </div>
+            <div class="modal-field">
+            <label class="modal-text-label">
+              Email </br>
+            <div class="input-wrapper">
+              <input id="email" class="modal-box" type="email" name="email"/>
             </label>
-
-              <svg width="15px" height="12px"><use href="./assets/images/svg-icons.svg#icon-email2"></use></svg>
-
-            <label class="modal-field">
-              Comments  
-              <textarea name="comment-text" rows="5" placeholder="Enter the text">
+              <svg class="modal-icon" width="15px" height="12px"><use href="./assets/images/svg-icons.svg#icon-email2"></use></svg>
+            </div>
+            </div>
+              <div class="modal-field">
+            <label class="modal-text-label">
+              Comments </br> 
+              <textarea id="comment-text" name="comment-text" rows="5" placeholder="Enter the text">
               </textarea>
             </label>
-
-            <label class="modal-field">
+            </div>
+            <div class="modal-field">
+            <label class="modal-text-label">
               <input type="checkbox" name="termsandconditions" value="accept" required />
               I agree with the newsletter and accept the <a>Terms and Conditions</a>.
             </label>
-
-            <button type="submit">Submit</button>
+              </div>
+            <button class="modal-submit-button" type="submit">Submit</button>
 
         </form>
         </div>
