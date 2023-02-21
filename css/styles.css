@@ -781,14 +781,24 @@ img {
   font-size: 12px;
   line-height: calc(12 / 14);
   color: var(--mainmid);
+  padding: 12px 16px;
+  resize: none;
+}
+.comment-text::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(12 / 14);
+  color: var(--mainmid);
 }
 
 .modal-box:hover,
-.modal-box:focus .comment-text:hover,
+.modal-box:focus,
+.comment-text:hover,
 .comment-text:focus {
   border-color: var(--accentbright);
   outline: none;
-  color: var(--accentbright);
 }
 
 .modal-icon {
@@ -802,7 +812,47 @@ img {
 .modal-box:focus + .modal-icon {
   fill: var(--accentbright);
 }
+
 .modal-link {
   color: var(--accentbright);
   cursor: pointer;
+}
+
+.modal-checkbox {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--mainmid);
+  letter-spacing: 0.03em;
+}
+
+.hidden-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect (0 0 0 0);
+}
+
+.checkbox-icon-wrapper {
+  height: 15px;
+  width: 16px;
+  border: 1px solid var(--mainmid);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox-icon {
+  fill: var(--mainbright);
+}
+
+.hidden-checkbox:checked + .checkbox-text > .checkbox-icon-wrapper {
+  background-color: var(--accentbright);
+  border: none;
 }

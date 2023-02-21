@@ -498,12 +498,19 @@
             </label>
             </div>
             <div class="modal-field">
-            <label class="modal-text-label">
-              <input type="checkbox" name="termsandconditions" value="accept" required />
-              I agree with the newsletter and accept the <a href="#" class="modal-link">Terms and Conditions</a>.
-              </div>
-            </label>
-
+            
+              <div class="modal-checkbox">
+                <label class="checkbox-text" for="check">
+                  <span class="checkbox-icon-wrapper">
+                    <svg class="checkbox-icon" width="11px" height="8px">
+                      <use  href="./assets/images/svg-icons.svg#icon-icon-check-1"></use>
+                    </svg>
+                    <input class="hidden-checkbox" id="check" type="checkbox" name="termsandconditions" value="accept" required />
+             </span> I agree with the newsletter and accept the <a href="#" class="modal-link">Terms and Conditions</a>.
+                  
+                </label>
+            </div>
+            </div>
             <button class="modal-submit-button" type="submit">Submit</button>
 
         </form>
