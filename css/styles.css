@@ -709,7 +709,7 @@ img {
   }
 }
 
-.modal-title {
+.modal-text {
   margin-top: 40px;
   margin-left: 40px;
   margin-bottom: 12px;
@@ -755,11 +755,10 @@ img {
 }
 
 .modal-box {
-  position: absolute;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  width: 100%;
+  width: 448px;
   cursor: pointer;
   padding: 15px 0 15px 57px;
   font-family: "Roboto";
@@ -769,9 +768,25 @@ img {
   line-height: calc(12 / 14);
   color: var(--mainmid);
 }
+.comment-text {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 120px;
+  width: 448px;
+  cursor: pointer;
+  padding: 15px 0 15px 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(12 / 14);
+  color: var(--mainmid);
+}
 
-.modal-box:hover .modal-box:focus {
-  border: 1px solid var(--accentbright);
+.modal-box:hover,
+.modal-box:focus .comment-text:hover,
+.comment-text:focus {
+  border-color: var(--accentbright);
   outline: none;
   color: var(--accentbright);
 }
@@ -786,4 +801,8 @@ img {
 .modal-box:hover + .modal-icon,
 .modal-box:focus + .modal-icon {
   fill: var(--accentbright);
+}
+.modal-link {
+  color: var(--accentbright);
+  cursor: pointer;
 }
