@@ -441,9 +441,9 @@
               </div>
               <div class="footer-right-section">
                <form>
-                <label>
+                <label class="footer-subscribe" for="foot-email">
                   Subscribe to the Newsletter
-                  <input type="email" name="email" placeholder="E-mail"/>
+                  <input id="foot-email" class="foot-email" type="email" name="email" placeholder="E-mail"/>
                 </label>
                 <button type="submit">Submit</button>
                </form> 
@@ -500,12 +500,13 @@
             <div class="modal-field">
             
               <div class="modal-checkbox">
+                    <input class="hidden-checkbox" id="check" type="checkbox" name="termsandconditions" value="accept" required />
+
                 <label class="checkbox-text" for="check">
                   <span class="checkbox-icon-wrapper">
                     <svg class="checkbox-icon" width="11px" height="8px">
                       <use  href="./assets/images/svg-icons.svg#icon-icon-check-1"></use>
                     </svg>
-                    <input class="hidden-checkbox" id="check" type="checkbox" name="termsandconditions" value="accept" required />
              </span> I agree with the newsletter and accept the <a href="#" class="modal-link">Terms and Conditions</a>.
                   
                 </label>

@@ -259,6 +259,35 @@ img {
   background-color: var(--accentbright);
 }
 
+.footer-subscribe {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--mainbright);
+}
+
+.foot-email {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc (20 / 16);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+
+.foot-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* Studio Page: Hero, Our Features, Our Team */
 
 /* Hero */
@@ -727,8 +756,8 @@ img {
 }
 .modal-submit-button {
   padding: 10px 55px;
-  margin-left: 164px;
-  margin-right: 164px;
+  display: block;
+  margin: 20px auto 0;
   background-color: var(--accentbright);
   color: var(--mainbright);
   border: none;
@@ -760,7 +789,7 @@ img {
   height: 40px;
   width: 448px;
   cursor: pointer;
-  padding: 15px 0 15px 57px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
