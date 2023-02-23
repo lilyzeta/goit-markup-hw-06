@@ -327,11 +327,25 @@
       </div>
       <div class="footer-right-section">
         <form>
-          <label>
+          <label class="footer-subscribe" for="foot-email">
             Subscribe to the Newsletter
-            <input type="email" name="email" placeholder="E-mail" />
           </label>
-          <button type="submit">Submit</button>
+          <div class="footer-email-items">
+            <input
+              id="foot-email"
+              class="foot-email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+
+            <div class="footer-button-contents">
+              <button class="submit-button-footer" type="submit">Submit</button>
+              <svg class="icon-airplane" width="24px" height="24px">
+                <use href="./assets/images/svg-icons.svg#icon-airplane"></use>
+              </svg>
+            </div>
+          </div>
         </form>
       </div>
     </div>
