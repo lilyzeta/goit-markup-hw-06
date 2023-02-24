@@ -326,6 +326,20 @@ img {
   top: 33px;
   left: 518px;
 }
+.submit-button-footer:hover,
+.submit-button-footer:focus {
+  color: var(--accentbright);
+  background-color: var(--accentbackground);
+  border: solid 1px var(--accentbright);
+  fill: var(--accentbright);
+}
+
+.submit-button-footer:hover > .icon-airplane {
+  fill: var(--accentbright);
+}
+.submit-button-footer:focus > .icon-airplane {
+  fill: var(--accentbright);
+}
 
 /* Studio Page: Hero, Our Features, Our Team */
 
@@ -803,6 +817,13 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+  color: var(--accentbright);
+  background-color: var(--accentbackground);
+  border: solid 1px var(--accentbright);
+}
+
 .modal-form {
   position: relative;
 }
@@ -828,7 +849,7 @@ img {
   height: 40px;
   width: 448px;
   cursor: pointer;
-
+  padding-left: 42px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -843,13 +864,13 @@ img {
   width: 448px;
   cursor: pointer;
   padding: 15px 0 15px 15px;
+  padding: 12px 16px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(12 / 14);
   color: var(--mainmid);
-  padding: 12px 16px;
   resize: none;
 }
 .comment-text::placeholder {
@@ -906,7 +927,10 @@ img {
   border: 0;
   clip: rect (0 0 0 0);
 }
-
+.checkbox-text {
+  display: flex;
+  align-items: center;
+}
 .checkbox-icon-wrapper {
   height: 15px;
   width: 16px;
@@ -915,6 +939,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
+}
+.checkbox-text:hover,
+.checkbox-text:focus {
+  cursor: pointer;
 }
 .checkbox-icon {
   fill: var(--mainbright);
